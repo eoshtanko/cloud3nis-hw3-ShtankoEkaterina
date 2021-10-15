@@ -38,6 +38,7 @@ export default function CreateNote() {
 			n.push(new_note)
 			await AsyncStorage.setItem("NOTES", JSON.stringify(n)).then(() => navigation.navigate("AllNotes"))
 			setNote("")
+			setImage(hse_image)
 			setTitle("Название")
 		}
 	}
