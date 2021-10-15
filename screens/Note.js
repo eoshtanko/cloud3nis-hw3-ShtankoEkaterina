@@ -42,6 +42,7 @@ export default function Note({ route }) {
 				source={{ uri: singleNote.image }} />
 			<TextInput
 				value={singleNote.content}
+                                editable={false}
 				maxHeight={Dimensions.get('window').height / 2.2}
 				style={{ color: "black", fontSize: 22 }}
 				multiline={true}
